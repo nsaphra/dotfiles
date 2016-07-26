@@ -32,6 +32,8 @@ Settings.extend "abbreviations",
   "output": "stdout"
   "index": "idx"
   "window": "win"
+  "tensorflow": "TensorFlow"
+  "latex": "LaTeX"
 
 Settings.extend "applications",
   find: "Finder"
