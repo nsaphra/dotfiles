@@ -3,6 +3,8 @@ Settings.dragonVersion = 5
 
 Settings.extend "abbreviations",
   shell: "#!/bin/bash"
+  "dictionary": "dict"
+  "evaluate": "eval"
   pythonbin: "#!/opt/python-devops/bin/python "
   perlbin: "#!/usr/bin/perl"
   "archive": "arXiv"
@@ -23,6 +25,13 @@ Settings.extend "abbreviations",
   "dimension": "dim"
   "exponent": "exp"
   "histogram": "hist"
+  "emphasize": "emph"
+  "token": "tok"
+  "jupiter": "ipynb"
+  "input": "stdin"
+  "output": "stdout"
+  "index": "idx"
+  "window": "win"
 
 Settings.extend "applications",
   find: "Finder"
@@ -32,6 +41,7 @@ Settings.extend "applications",
   slack: "Slack"
   slacker: "Slack"
   fire: "Firefox"
+  skim: "Skim"
 
 Settings.extend "translations",
   "cliché": "cliche"
@@ -39,6 +49,8 @@ Settings.extend "translations",
   "montréal": "montreal"
   "café": "cafe"
   "prend": "print"
+  "naïve": "naive"
+  "pokémon": "pokemon"
 
 Settings.extend "directories",
   "voicecode": "~/voicecode"
@@ -50,13 +62,28 @@ Settings.extend "modes",
   "emacs": "emacs"
 
 Settings.extend "shellCommands",
-  "jupiter": "jupyter",
+  "jupiter": "jupyter ",
+  "jupiter notebook": "jupyter notebook ",
   "arsink": "rsync ",
   "brew": "brew ",
   "brew install": "brew install ",
   "brew update": "brew update ",
   "brew upgrade": "brew upgrade ",
-  "grep": "grep"
+  "grep": "grep ",
+  "teemux": "tmux ",
+  "touch": "touch ",
+  "team ox": "tmux "
+  "vim": "vim "
 
 Settings.extend "letters",
   m: "meesh"
+  x: "gax"
+
+Settings.extend "homonyms", [
+  ["cued", "queued"],
+  ["queue", "cue", "q"],
+  ["jim", "gym"],
+  ["waits", "weights"],
+  ["and", "end"],
+  ["right", "write"]
+]

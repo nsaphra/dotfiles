@@ -60,3 +60,5 @@ export WORDNET_JAR=/Users/nsaphra/Documents/research/glamr/jamr/src/edu.mit.jwi_
 # Keeps perl working for PDT corpus stuff
 #source ~/perl5/perlbrew/etc/bashrc
 #export PERL5LIB=:$HOME/perl5/perlbrew/perls/perl-5.16.0/lib/site_perl:$PERL5LIB
+
+test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"

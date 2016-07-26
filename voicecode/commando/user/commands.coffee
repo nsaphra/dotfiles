@@ -2,41 +2,50 @@
 
 Commands.create
   "sky turn":
-    grammarType: "none"
     description: "shift enter"
-    tags: ["combo", "return"]
+    tags: ["return"]
     repeatable: true
-    action: ->
+    action: (input) ->
       @key 'return', 'shift'
   "latexoif":
     grammarType: "none"
-    description: "shift enter"
+    description: "latex quotes"
     triggerPhrase: "lahtehkoif"
     tags: ["symbol", "user"]
     misspellings: []
     action: (input) ->
       @string "``''"
-      @left(times=1)
-  "swot"
+      @left(times=2)
+  "destar"
     tags: ["symbol", "user"]
     action: (input) ->
-      @string ". "
-  "undo":
-    tags: ["user", "shell"]
-    triggerScopes: ["iTerm", "Terminal"]
+      @string " * "
+  "verby":
+    tags: ["user", "symbol"]
     action: (input) ->
-      @key "Control", "_"
+      @string "``"
+      @left(times=2)
+  "sterly":
+    tags: ["user", "symbol"]
+    action: (input) ->
+      @string "£"
+
+Commands.extend "dizzle", ->
+  if @currentApplication() is "iTerm" or @currentApplication() is "Terminal"
+    key "Control", "_"
 
 Settings["remoteHosts"] =
   "nyx": "nyx"
   "nicks": "nyx"
   "moroso": "moroso"
+  "bravas": "bravas"
 Commands.create
   "shell secure":
     grammarType: 'textCapture'
     description: "either connect to a machine or simply type 'ssh '"
     tags: ["ssh", "terminal", "domain-specific"]
     triggerScopes: ['iTerm', 'Terminal']
+    continuous: false
     action: (input) ->
       text = ""
       if input?.length
