@@ -31,21 +31,20 @@ Commands.create
       @string "£"
 
 Commands.extend "dizzle", ->
-  if @currentApplication() is "iTerm" or @currentApplication() is "Terminal"
+  if @currentApplication() is "iTerm2" or @currentApplication() is "Terminal"
     key "Control", "_"
 
 Settings["remoteHosts"] =
   "nyx": "nyx"
   "nicks": "nyx"
   "moroso": "moroso"
-  "bravas": "bravas"
+  "brava": "bravas"
 Commands.create
   "shell secure":
     grammarType: 'textCapture'
     description: "either connect to a machine or simply type 'ssh '"
     tags: ["ssh", "terminal", "domain-specific"]
-    triggerScopes: ['iTerm', 'Terminal']
-    continuous: false
+    triggerScopes: ['iTerm2', 'Terminal']
     action: (input) ->
       text = ""
       if input?.length
@@ -104,7 +103,7 @@ Commands.create
     grammarType: 'textCapture'
     description: "git commands"
     tags: ["terminal", "domain-specific", "user"]
-    triggerScopes: ['iTerm', 'Terminal']
+    triggerScopes: ['iTerm2', 'Terminal']
     action: (input) ->
       text = ""
       if input?.length

@@ -3,7 +3,7 @@
 ## Current Set Up
 - Dragon version: 5
 - Main editor: Atom
-- Many languages: Python (including TensorFlow), Julia, C, LaTeX
+- Main languages: Python (including TensorFlow), Julia, C, LaTeX
 - Computer: MacBook Air (13-inch, Mid 2013), 8 gigabytes of RAM
 - OS: 10.11.5 (El Capitan)
 - Microphone: Sennheiser ME 3-EW headset EW microphone

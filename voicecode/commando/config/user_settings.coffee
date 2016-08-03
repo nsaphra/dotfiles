@@ -44,6 +44,7 @@ Settings.extend "applications",
   slacker: "Slack"
   fire: "Firefox"
   skim: "Skim"
+  console: "Console"
 
 Settings.extend "translations",
   "cliché": "cliche"
