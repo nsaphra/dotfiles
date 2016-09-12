@@ -14,6 +14,7 @@ Settings.extend "abbreviations",
   "bio archive": "bioRxiv"
   "bowtie": "bwt"
   "python": "py"
+  "filename": "fname"
   "pointer": "ptr"
   "information": "info"
   "evaluation": "eval"
@@ -34,6 +35,7 @@ Settings.extend "abbreviations",
   "window": "win"
   "tensorflow": "TensorFlow"
   "latex": "LaTeX"
+  "example": "e.g.,"
 
 Settings.extend "applications",
   find: "Finder"
@@ -74,9 +76,15 @@ Settings.extend "shellCommands",
   "brew upgrade": "brew upgrade ",
   "grep": "grep ",
   "teemux": "tmux ",
+  "team ox attach": "tmux attach "
   "touch": "touch ",
   "team ox": "tmux "
   "vim": "vim "
+  "unique": "uniq"
+  "pip install ": "pip install "
+  less: "less"
+  condo: "conda "
+  "condo activate": "conda activate "
 
 Settings.extend "letters",
   m: "meesh"
@@ -88,5 +96,6 @@ Settings.extend "homonyms", [
   ["jim", "gym"],
   ["waits", "weights"],
   ["and", "end"],
-  ["right", "write"]
+  ["right", "write", "rite"],
+  ["colonel", "kernel"]
 ]

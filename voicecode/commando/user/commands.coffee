@@ -39,6 +39,8 @@ Settings["remoteHosts"] =
   "nicks": "nyx"
   "moroso": "moroso"
   "brava": "bravas"
+  "b": "bravas"
+  graphics: "graphics"
 Commands.create
   "shell secure":
     grammarType: 'textCapture'
