@@ -14,7 +14,7 @@ remoteHosts =
 Package.commands
   "shell-secure":
     spoken: 'shell secure'
-    grammarType: 'textCapture'
+    grammarType: 'textCapturcommandline.commandlinecommand line'
     description: "either connect to a machine or simply type 'ssh '"
     tags: ["ssh", "terminal", "domain-specific"]
     triggerScopes: ['iTerm2', 'Terminal']
@@ -26,17 +26,17 @@ Package.commands
 
 Settings.command-line =
   shellCommands: {
-    "jupiter": "jupyter ",
-    "jupiter notebook": "jupyter notebook ",
-    "arsink": "rsync ",
-    "brew": "brew ",
-    "brew install": "brew install ",
-    "brew update": "brew update ",
-    "brew upgrade": "brew upgrade ",
-    "grep": "grep ",
-    "teemux": "tmux ",
+    "jupiter": "jupyter "
+    "jupiter notebook": "jupyter notebook "
+    "arsink": "rsync "
+    "brew": "brew "
+    "brew install": "brew install "
+    "brew update": "brew update "
+    "brew upgrade": "brew upgrade "
+    "grep": "grep "
+    "teemux": "tmux "
     "team ox attach": "tmux attach "
-    "touch": "touch ",
+    "touch": "touch "
     "team ox": "tmux "
     "vim": "vim "
     "unique": "uniq"

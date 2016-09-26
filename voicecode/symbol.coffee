@@ -1,12 +1,11 @@
 Package.commands
-  "sky-turn":
+  "shift-return":
     spoken: "sky turn"
-    description: "shift enter"
     tags: ["user", "return"]
     repeatable: true
     action: ->
       @key 'return', 'shift'
-  "destar"
+  "destar":
     tags: ["symbol", "user"]
     action: ->
       @string " * "
@@ -19,3 +18,9 @@ Package.commands
     tags: ["user", "symbol"]
     action: ->
       @string "£"
+  "alt-return":
+    spoken: "alter turn"
+    tags: ["user", "modifier"]
+    repeatable: true
+    action: ->
+      @key 'return', 'alt'
