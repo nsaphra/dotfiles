@@ -14,17 +14,17 @@ remoteHosts =
 Package.commands
   "shell-secure":
     spoken: 'shell secure'
-    grammarType: 'textCapturcommandline.commandlinecommand line'
+    grammarType: 'textCapture'
     description: "either connect to a machine or simply type 'ssh '"
-    tags: ["ssh", "terminal", "domain-specific"]
-    triggerScopes: ['iTerm2', 'Terminal']
+    tags: ["ssh", "terminal"]
+    triggerScopes: Settings.os.terminalApplications
     action: (input) ->
       text = ""
       if input?.length
         text = @fuzzyMatch remoteHosts, input.join(' ')
       @string "ssh " + text
 
-Settings.command-line =
+Settings['command-line'] =
   shellCommands: {
     "jupiter": "jupyter "
     "jupiter notebook": "jupyter notebook "
@@ -44,4 +44,11 @@ Settings.command-line =
     less: "less"
     condo: "conda "
     "condo activate": "conda activate "
+  }
+
+Settings.os =
+  directories: {
+    voicecode: "~/voicecode"
+    scratch: "/disk/scratch/nsaphra/"
+    data: "/afs/inf.ed.ac.uk/group/project/agora/dataset"
   }

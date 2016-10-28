@@ -18,11 +18,18 @@ latexCommands =
   "subsection": "subsection"
   "section": "section"
   "subsubsection": "subsubsection"
+  site: "cite"
+  "site p": "citep"
+  "site t": "citet"
+
 Package.commands
-  "lahtek":
+  "latex":
     grammarType: 'oneArgument'
+    spoken: "lacks"
+    synonyms: "lax"
     tags: ["user", "latex"]
     action: (input) ->
+      text = ""
       if input?.length
         text = @fuzzyMatch latexCommands, input
         @string "\\" + text + "{}"
@@ -36,6 +43,7 @@ Package.commands
         text = @fuzzyMatch mathSymbols, input
         @string text
   "bigsenchen":
+    spoken: "bigsenchen"
     grammarType: 'textCapture'
     description: 'Sentence case with spaces'
     tags: ['text', 'user']
