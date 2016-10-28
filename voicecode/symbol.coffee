@@ -6,15 +6,18 @@ Package.commands
     action: ->
       @key 'return', 'shift'
   "destar":
+    spoken: "destar"
     tags: ["symbol", "user"]
     action: ->
       @string " * "
   "verby":
+    spoken: "verby"
     tags: ["user", "symbol"]
     action: ->
       @string "``"
       @left(1)
   "sterly":
+    spoken: "sterly"
     tags: ["user", "symbol"]
     action: ->
       @string "£"

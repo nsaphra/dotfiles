@@ -7,6 +7,9 @@ Settings.alphabet =
 Settings.vocabulary =
   translations: {
     "prend": "print"
+    shals: "\\"
+    virg: "v"
+    epoque: "epoch"
   }
 
 Settings.homonyms =
@@ -27,7 +30,7 @@ Settings.insert =
     "at all": "et. al."
     "auxiliary": "aux"
     "biology": "bio"
-    "bio archive": "bioRxiv"
+    "archive": "arxiv"
     "bowtie": "bwt"
     "python": "py"
     "filename": "fname"
@@ -52,7 +55,10 @@ Settings.insert =
     "tensorflow": "TensorFlow"
     "latex": "LaTeX"
     "example": "e.g.,"
+    "filename": "fname"
     "phd": "PhD"
+    "toolkit": "nltk"
+    "shuffle": "shuf"
   }
 
 Settings.application =
@@ -61,3 +67,5 @@ Settings.application =
     slacker: "Slack"
     skim: "Skim"
     console: "Console"
+    things: "Things"
+    ro: "Zotero"
