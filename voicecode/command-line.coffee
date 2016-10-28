@@ -45,10 +45,3 @@ Settings['command-line'] =
     condo: "conda "
     "condo activate": "conda activate "
   }
-
-Settings.os =
-  directories: {
-    voicecode: "~/voicecode"
-    scratch: "/disk/scratch/nsaphra/"
-    data: "/afs/inf.ed.ac.uk/group/project/agora/dataset"
-  }
