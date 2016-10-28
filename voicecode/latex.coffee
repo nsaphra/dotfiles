@@ -1,3 +1,10 @@
+var myPackage = Packages.register({
+  name: 'latex',
+  description: 'Useful commands for writing in LaTeX',
+  platforms: ['darwin', 'unix', 'windows'],
+})
+
+
 mathSymbols =
   "eta": "eta"
   "chai": "chi"
@@ -23,7 +30,7 @@ latexCommands =
   "site t": "citet"
 
 Package.commands
-  "latex":
+  "latek":
     grammarType: 'oneArgument'
     spoken: "lacks"
     synonyms: "lax"
