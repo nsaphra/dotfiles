@@ -27,3 +27,5 @@ Package.commands
     repeatable: true
     action: ->
       @key 'return', 'alt'
+
+Commands.addMisspellings('format:dot-sentance', ['dotson'])

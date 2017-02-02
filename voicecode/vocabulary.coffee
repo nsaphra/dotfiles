@@ -53,12 +53,14 @@ Settings.insert =
     "index": "idx"
     "window": "win"
     "tensorflow": "TensorFlow"
-    "latex": "LaTeX"
+    "latex": "tex"
     "example": "e.g.,"
     "filename": "fname"
     "phd": "PhD"
     "toolkit": "nltk"
     "shuffle": "shuf"
+    "arguments": "args"
+    "class": "cls"
   }
 
 Settings.application =
@@ -69,3 +71,4 @@ Settings.application =
     console: "Console"
     things: "Things"
     ro: "Zotero"
+    notes: "Notes"

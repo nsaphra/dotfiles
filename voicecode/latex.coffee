@@ -1,9 +1,9 @@
-var myPackage = Packages.register({
-  name: 'latex',
-  description: 'Useful commands for writing in LaTeX',
-  platforms: ['darwin', 'unix', 'windows'],
-})
-
+# var myPackage = Packages.register({
+#   name: 'latex',
+#   description: 'Useful commands for writing in LaTeX',
+#   platforms: ['darwin', 'unix', 'windows'],
+# })
+#
 
 mathSymbols =
   "eta": "eta"
@@ -32,8 +32,7 @@ latexCommands =
 Package.commands
   "latek":
     grammarType: 'oneArgument'
-    spoken: "lacks"
-    synonyms: "lax"
+    spoken: "lexer"
     tags: ["user", "latex"]
     action: (input) ->
       text = ""
@@ -58,11 +57,10 @@ Package.commands
     autoSpacing: 'never normal'
     multiPhraseAutoSpacing: 'never normal'
     action: (input) ->
-      if @isTextSelected()
-        contents = @getSelectedText()
-        transformed = contents.replace /(^|\.\s|\n)\w/g, (match) ->
-          match.toUpperCase()
-        @string transformed
+      contents = @getSelectedText()
+      transformed = contents.replace /(^|\.\s|\n)\w/g, (match) ->
+        match.toUpperCase()
+      @string transformed
   "latex coif":
     grammarType: "none"
     description: "latex quotes"

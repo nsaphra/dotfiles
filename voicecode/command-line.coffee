@@ -10,6 +10,7 @@ remoteHosts =
   "brava": "bravas"
   "b": "bravas"
   graphics: "graphics"
+  "s": "sl7"
 
 Package.commands
   "shell-secure":
@@ -44,4 +45,12 @@ Settings['command-line'] =
     less: "less"
     condo: "conda "
     "condo activate": "conda activate "
+    topic: "htop"
+  }
+
+Settings.os =
+  directories: {
+    voicecode: "~/voicecode"
+    scratch: "/disk/scratch/nsaphra/"
+    data: "/afs/inf.ed.ac.uk/group/project/agora/dataset"
   }
